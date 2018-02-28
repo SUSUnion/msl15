@@ -1,0 +1,51 @@
+<MSL:TemplateSnippet SnippetName="m-account" />
+<div class="container content">
+    <div class="row">
+        <div class="col-xs-12 col-sm-8 col-md-9 col-sm-push-4 col-md-push-3">
+            <MSL:PageTitle ContainerTag="h1" ContainerCssClass="page-title" />
+ 	    <MSL:PageBanner Width="850" Height="320" ResizeType="CropToFit" ContainerCssClass="page-banner" />
+            <MSL:Content />
+        </div>
+        <aside class="col-xs-12 col-sm-4 col-md-3 col-sm-pull-8 col-md-pull-9">
+            <div class="box">
+               <p id="org-name"><MSL:OrganisationName /></p>
+               <MSL:EmailAddressLink ContainerCssClass="grouping-contact" />
+               <MSL:GroupingTwitterLink Text="Find us on Twitter" ContainerCssClass="grouping-contact" />
+               <MSL:GroupingFacebookLink Text="Find us on Facebook" ContainerCssClass="grouping-contact" />
+            </div>
+            <div id="leftnavmenu">
+		<MSL:Navigation ShowSectionNav="true" />
+            </div>
+		<MSL:Eventlist OrganisationID="6013" IncludeChildOrganisations="true" ContainerCssClass="event-box" EventsToDisplay="4" StartOffset="0|Minutes|From|Now" StartOffset="1|Years|From|Now" ShowDateOnEvent="true" ShowTimeOnEvent="true" />
+            <a href="/whatson/" class="seemore">See more events</a>
+        </aside>
+    </div>
+</div>
+<MSL:TemplateSnippet SnippetName="m-footer" />
+<script type="text/javascript">
+$(document).ready(function () {
+    
+    <MSL:TemplateSnippet SnippetName="m-scripts-common" />
+
+    // Hide empty sidebar boxes
+    $('aside .box').each(function () {
+        $this = $(this);
+        if (!$.trim($this.text())) {
+            $this.hide();
+        }
+    });
+
+    $('h2.toggle').click(function () {
+        $(this).toggleClass('active');
+    });
+
+    $('.event-box .event_item').each(function () {
+        $this = $(this);
+        t = $this.find('.msl_event_time');
+        t.html('<span class="date">' + t.text().match(/[0-9]+/g)[0] + '</span><span class="month">' + t.text().match(/\b[A-z]{3}/g)[0] + '</span>');
+    });
+    
+});
+</script>
+<script type="text/javascript" src="/assets/site_resources/lang.js"></script>
+<script type="text/javascript" src="/assets/site_resources/i18next-1.11.0.js"></script>
