@@ -1,0 +1,4 @@
+/* Colour coding - Red */
+aside li a, h2.toggle {background-color:#E23134;}
+aside li a:hover, aside li a.current {background:#e85A5D;}
+h1.page-title {color:#e23134;}

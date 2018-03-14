@@ -1,0 +1,4 @@
+/* Colour coding - Pink */
+aside li a, h2.toggle {background-color:#a92285;}
+aside li a:hover, aside li a.current {background:#ba4e9d;}
+h1.page-title {color:#a92285;}

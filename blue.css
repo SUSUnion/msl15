@@ -1,0 +1,4 @@
+/* Colour coding - Blue */
+aside li a, h2.toggle {background-color:#27347D;}
+aside li a:hover, aside li a.current {background:#525d97;}
+h1.page-title {color:#27347D;}

@@ -1,0 +1,4 @@
+/* Colour coding - Orange */
+aside li a, h2.toggle {background-color:#e9861C;}
+aside li a:hover, aside li a.current {background:#ed9e49;}
+h1.page-title {color:#e9861C;}
