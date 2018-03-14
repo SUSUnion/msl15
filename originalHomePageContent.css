@@ -1,0 +1,286 @@
+.prcontact {
+
+	display:none;
+}
+/* News slider */
+
+.bx-wrapper .bx-prev {left:20px;}
+.bx-wrapper .bx-next {right:20px;}
+
+/* Event list (box style) */
+/*
+.event-box h2 {
+    margin: 0;
+    padding: 0 0 10px;
+    font-size: 18px;
+    font-family: Oswald;
+    text-transform: uppercase;
+    border-bottom: 1px solid #fff;
+    line-height: 1;
+}
+.seemore {
+    display: block;
+    background-color: #1d1d1d;
+    padding: 10px;
+    color: #fff;
+    margin: 5px 0 0;
+    line-height: 0;
+}
+.event-box {margin: 15px 0;}
+@media all and (min-width:992px) { .event-box {margin: 0;} }
+.event-box .event_item {position:relative; background:#e5e9e9; padding:10px 10px 10px 75px; min-height:70px;margin:0 0 1px; border-left: 5px solid #c5c9c9;}
+.event-box .event_item dl {margin:0;}
+.event-box .event_item a.msl_event_name {color:#000; font-weight:normal; font-size:14px;}
+.event-box .event_item dd:empty, .event-box .event_item img, .event-box .event_item .msl_event_description {display:none;}
+.event-box .event_item .msl_event_location {font-size:12px;}
+.event-box .event_item .msl_event_time {position:absolute;left:0;top:0;width:50px;padding: 15px 20px;line-height:1; }
+.event-box .event_item .msl_event_time .date {font-size:32px;display:block;font-weight:bold;font-family:Oswald, sans-serif;}
+.event-box .event_item .msl_event_time .month {font-size:12px;display:block;text-transform:uppercase;}
+
+@media all and (min-width:992px) {
+.event-box .event_item {padding-left:50px; min-height:55px;}
+.event-box .event_item .msl_event_time {padding:12px 15px;}
+.event-box .event_item .msl_event_time .date {font-size:24px;}
+.event-box .event_item .msl_event_time .month {font-size:10px;}
+}
+
+@media all and (min-width:1200px) {
+.event-box .event_item {padding-left:75px; min-height:70px;}
+.event-box .event_item .msl_event_time {padding:15px 20px;}
+.event-box .event_item .msl_event_time .date {font-size:32px;}
+.event-box .event_item .msl_event_time .month {font-size:12px;}
+}
+.event-box .event_item.msltypesocieties {border-color: #008a2f;}
+.event-box .event_item.msltypeents {border-color: #111;}
+.event-box .event_item.msltypesports {border-color: #008a2f;}
+.event-box .event_item.msltypeadvice {border-color: #bed713;}
+.event-box .event_item.msltypeunion {border-color: #d33a82;}
+.event-box .event_item.msltypevoice {border-color: #d92d28;}
+.event-box .event_item.msltypetravel {border-color: #f07900;}
+*/
+/* Sabbs */
+
+a.officerbutton {
+    color: #0083e8;
+    text-decoration: none;
+}
+
+
+
+.officerbutton {
+    max-width: 18%;
+    float: left;
+    margin-right: 2%;
+    text-decoration: none;
+        
+}
+
+.officername {
+    display: block;
+    text-align: center;
+    color: black;
+    text-decoration: none;
+}
+
+.officerpost {
+    display: block;
+    text-align:center;
+    font-size: 110%;
+    font-weight: 900;
+    color: #00b3bc;
+    padding: 1px;
+    margin: 5px
+}
+
+.officerfamily {
+    border-top: 1px solid #c5c5c9;
+    max-width: 100%;
+    overflow: auto;
+    margin-top: 2%;
+    padding-top: 2%;
+    font-size: 10px;
+}
+
+@media only screen and (min-width: 500px) {
+    .officerfamily {
+        border-top: 1px solid #c5c5c9;
+        max-width: 100%;
+        overflow: auto;
+        margin-top: 2%;
+        padding-top: 2%;
+        font-size: 18px;
+    }
+}
+
+a { text-decoration: none;
+    
+}
+
+.officerimg {
+    
+    background: transparent;
+    border: none;
+    border-radius: 4px;
+    display: block;
+    margin: auto;
+    max-width: 95%;
+}
+
+@media all and (min-width:992px) {
+.sabbs li a {
+  margin:0 -1.5%;
+}
+.sabbs li:first-child a {margin-left:6%;}
+.sabbs li a > span {top:10px;left:0px;}
+.sabbs li a.lewys > span {left:-10px;}
+}
+
+@media all and (min-width:1200px) {
+.sabbs li a {
+  margin:0 -2.5%;
+}
+.sabbs li:first-child a {margin-left:10%;}
+.sabbs li a > span {top:10px;left:20px;}
+.sabbs li a.lewys > span {left:10px;}
+}
+@media all and (max-width:767px) {
+.sabbs {padding:0;}
+.sabbs li a, .sabbs li a:hover {
+    width: 100%;
+    float: none;
+    padding: 10px 0 0 100px;
+    margin: 0;
+    display: block;
+    background-position: 50% bottom;
+    background-size: 80px;
+    background-repeat: no-repeat;
+    position: relative;
+    height: 100px;
+    border-bottom: 1px solid #fff;
+    background-position: 10px 5px;
+}
+.sabbs li a span {position:relative;}
+}
+
+/* Slider styles */
+
+.news-slides {}
+.news-slides .news_item {position:relative;border:1px solid #c5c5c5;}
+.news-slides .news_item h5 {margin:0;}
+.news-slides .news_item h5 a {
+  position:absolute;
+  bottom:0;
+  display:none;
+  padding: 10px;
+  background: #1d1d1d;
+  left:0;
+  right:0;
+  color:#fff;
+  text-decoration:none;
+}
+.news-slides .news_item p.leader {display:none;}
+
+.event-slides {
+    margin: 10px -15px 30px;
+    padding: 40px 15px 10px;
+    border-bottom: 1px solid #c5c5c8;
+    clear: both;
+    border-top: 1px solid #c5c5c8;
+}
+.event-slides .event_item {
+  width:300px;
+  position:relative;
+}
+.event-slides .event_item dl {margin:0;}
+.event-slides .msl_event_location, .event-slides .msl_event_description, .event-slides .msl_event_hook {display:none;}
+.event-slides a.msl_event_name {
+position:absolute;
+bottom:0;
+left:0;
+right:0;
+padding: 10px 15px;
+font-weight:normal;
+background:rgba(29,29,27,0.9);
+color:#fff;
+}
+.event-slides .msl_event_time {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    padding: 6px 7px;
+    line-height: 1;
+    border-radius: 1px;
+    background: #fff;
+    font-size: 12px;
+    color: #000;
+}
+
+
+/* Adverts */
+
+.adverts {
+  text-align:center;
+}
+.adverts > div {
+  margin: 15px 0;
+}
+@media all and (min-width:480px) {
+
+  .adverts {margin: 20px 0 0;display: block;overflow: hidden;text-align: left;}
+  .adverts > div {
+    display: inline-block;
+    margin: 0 15px 15px;
+    float: none;
+
+  }
+}
+@media all and (min-width:992px) {
+  .adverts > div { margin: 2% }
+}
+
+
+/* Sorry Welsh Message */
+.sorrywelsh {
+    text-align: center;
+    padding-top: 20px;
+    font-size: x-large;
+    font-weight: bold;
+    color: #000;
+}
+
+/*Floating Feedback Form*/
+.contactform{
+h3: margin-top: 0px!important;
+position: fixed;
+    bottom: 10%;
+    right: 0;
+    width: 300px;
+   border: 1px solid #ddd;
+background-color: #fff;
+padding: 1.5em;
+line-height: 1.5em;
+box-shadow: 0 0 1px rgba(0,0,0,0.3);
+margin: 4px;
+z-index: 100;
+}
+@media all and (min-width:992px) {
+.adverts > .mslwidget {
+    float: left;
+    width: 33.333%;
+    display: inline-block;
+    text-align: center;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+}
+}
+@media all and (min-width:480px) {
+.adverts > .mslwidget {
+    display: inline-block;
+    text-align: center;
+    overflow: hidden;
+    padding: 2px;
+    margin: 0px;
+    display: block;
+}
+}
